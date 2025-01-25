@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f0f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+    color: #e91e63;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input, select, button {
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #f0a6ca;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+select {
+    width: 50%;
+    background-color: #faf1f7;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+button:active {
+    background-color: #c2185b;
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #e91e63;
+    background-color: #ffe6f2;
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.6);
+}
+
+#result {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e91e63;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffe6f2;
+    border: 2px solid #f0a6ca;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+    width: 80%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#result:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.6);
+}
+
+#result:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.3);
+}
+
+input:focus {
+    border-color: #d81b60;
+    background-color: #f8d0e6;
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
+    transform: scale(1.05);
+}
+
+input:active {
+    background-color: #ffe6f2;
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.3);
+}
+ 
