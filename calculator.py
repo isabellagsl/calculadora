@@ -17,7 +17,7 @@ def calculate():
     num1 = data.get('num1')
     num2 = data.get('num2')
 
-    # Input validation
+
     if num1 is None or num2 is None:
         return jsonify({'error': 'Both num1 and num2 are required.'}), 400
     try:
