@@ -3,7 +3,7 @@ document.getElementById('calculate').addEventListener('click', function() {
     const num2 = document.getElementById('num2').value;
     const operation = document.getElementById('operation').value;
 
-    // Input validation
+   
     if (!num1 || !num2) {
         document.getElementById('result').innerText = 'Error: Both numbers are required.';
         return;
